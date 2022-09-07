@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="calc.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <h3 class="mt-5 fw-bolder" style="text-align: center;">CALCULATOR</h3>
+            <div class="card" style="width: 45rem; ">
+                <div class="card-body">
+                    <div class="row" style="border: 6px solid orange; height: 125px;">
+                        <input type="text" id="Result" style="font-size: 28px;">
+                    </div>
+
+                
+                    <div class="mt-3">
+                        <button type="button" class=" btn btn-info exc" value="C" onclick="clearBox()">C</button>
+                        <button type="button" class=" btn btn-warning key-btn" value="%" onclick="displayNumber('%')">%</button>
+                        <button type="button" class=" btn btn-warning key-btn" value="/" onclick="displayNumber('/')">/</button>
+                    </div>
+                    <div class="mt-3">
+
+                        <button type="button" class=" btn btn-light key2-btn"  onclick="displayNumber('7')">7</button>
+                        <button type="button" class=" btn btn-light key2-btn" value="8" onclick="displayNumber('8')">8</button>
+                        <button type="button" class=" btn btn-light key2-btn" value="9" onclick="displayNumber('9')">9</button>
+                        <button type="button" class=" btn btn-warning key2-btn" value="X" onclick="displayNumber('*')">X</button>
+                    </div>
+
+                    <div class="mt-3">
+
+                        <button type="button" class=" btn btn-light key2-btn" value="4" onclick="displayNumber('4')">4</button>
+                        <button type="button" class=" btn btn-light key2-btn" value="5" onclick="displayNumber('5')">5</button>
+                        <button type="button" class=" btn btn-light key2-btn" value="6" onclick="displayNumber('6')">6</button>
+                        <button type="button" class=" btn btn-warning key2-btn" value="-" onclick="displayNumber('-')">-</button>
+                    </div>
+
+                    <div class="mt-3">
+
+                        <button type="button" class=" btn btn-light key2-btn" value="1"onclick="displayNumber('1')">1</button>
+                        <button type="button" class=" btn btn-light key2-btn" value="2"onclick="displayNumber('2')">2</button>
+                        <button type="button" class=" btn btn-light key2-btn" value="3" onclick="displayNumber('3')">3</button>
+                        <button type="button" class=" btn btn-warning key2-btn" value="+" onclick="displayNumber('+')">+</button>
+                    </div>
+                    <div class="mt-3">
+                        <button type="button" class=" btn btn-info exc" value="0" onclick="displayNumber('0')" >0</button>
+                        <button type="button" class=" btn btn-warning key-btn" value="." onclick="displayNumber('.')">.</button>
+                        <button type="button" class=" btn btn-warning key-btn" value="=" onclick="evaluateExpression()">=</button>
+                    </div>
+                    <div class="mt-3">
+                       
+                        <button type="button" class=" btn btn-warning key-btn" value="" onclick="backSpace()">Back</button>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+</body>
+
+<script src="bootstrap.js"></script>
+<script src="cal.js"></script>
+
+</html>

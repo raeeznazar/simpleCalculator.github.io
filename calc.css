@@ -1,0 +1,68 @@
+body{
+    background-color: #87CEFA;
+    width: 100%;
+    height: auto;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+button {
+    height: 60px;
+    font-size: 2rem!important;
+
+  }
+
+.card{
+    margin: 0;
+}  
+.exc{
+
+    width: 40%;
+}
+
+.key-btn{
+width: 29.3%;
+}
+
+.key2-btn{
+    width: 24.5%
+}
+
+@media screen and (min-width: 412px){
+    .key-btn{
+        width: 28.5%;
+        }
+        
+        .key2-btn{
+            width: 24%
+        }
+
+} 
+
+@media screen and (max-width: 393px){
+    .key-btn{
+        width: 28.5%;
+        }
+        
+        .key2-btn{
+            width: 24%
+        }
+
+}
+/* @media screen and (min-width: 375px){
+    .key-btn{
+        width: 28.5%;
+        }
+        
+        .key2-btn{
+            width: 24%
+        }
+
+} */
+
